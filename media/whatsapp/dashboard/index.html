@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Bot v3 — Dashboard</title>
+    <link rel="stylesheet" href="/dashboard/static/style.css">
+</head>
+<body>
+<div id="app">
+    <!-- Header -->
+    <header>
+        <h1>🤖 WhatsApp Bot v3 — Dashboard</h1>
+        <div id="connection-status" class="status disconnected">Disconnected</div>
+        <button id="stop-btn" class="btn btn-danger" onclick="stopBot()">Stop Bot</button>
+    </header>
+
+    <!-- Top metrics row -->
+    <div class="metrics-row">
+        <div class="metric-card" id="metric-health">
+            <div class="metric-label">Health</div>
+            <div class="metric-value" id="health-value">—</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Uptime</div>
+            <div class="metric-value" id="uptime-value">—</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Pending</div>
+            <div class="metric-value" id="pending-value">0</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Messages Today</div>
+            <div class="metric-value" id="messages-value">0</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">AI Providers</div>
+            <div class="metric-value" id="providers-value">—</div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Left: Pending Approvals -->
+        <section class="panel">
+            <h2>⏳ Pending Approvals</h2>
+            <div id="approvals-list" class="list">
+                <div class="empty">No pending approvals</div>
+            </div>
+        </section>
+
+        <!-- Center: Live Message Feed -->
+        <section class="panel panel-wide">
+            <h2>📡 Live Message Feed</h2>
+            <div id="messages-feed" class="feed"></div>
+        </section>
+
+        <!-- Right: Metrics -->
+        <section class="panel">
+            <h2>📊 Metrics</h2>
+            <div id="metrics-detail"></div>
+        </section>
+    </div>
+
+    <!-- Bottom: Plugins & Knowledge Base -->
+    <div class="bottom-content">
+        <section class="panel">
+            <h2>🔌 Plugins</h2>
+            <div id="plugins-list"></div>
+        </section>
+        <section class="panel">
+            <h2>📚 Knowledge Base</h2>
+            <div id="knowledge-sources"></div>
+        </section>
+        <section class="panel">
+            <h2>📅 Scheduled Messages</h2>
+            <div id="scheduled-list"></div>
+        </section>
+    </div>
+</div>
+
+<script src="/dashboard/static/app.js"></script>
+</body>
+</html>

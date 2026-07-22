@@ -1,0 +1,1 @@
+The Research Agent specializes in deep web research using Tavily, Firecrawl, and ArXiv. It searches broadly, scrapes deeply, and returns structured summaries with citations. Route tasks here for competitive analysis, academic research, technology landscape, or general fact-finding.

@@ -1,0 +1,14 @@
+{
+  "name": "research",
+  "description": "Web research — search, fetch URLs, extract content, arxiv papers, news, Q&A with sources",
+  "tags": ["research", "web-search", "fetch", "arxiv", "news", "qna"],
+  "category": "research",
+  "capabilities": ["web-search", "url-fetching", "content-extraction", "arxiv-search", "news-search", "source-backed-qa"],
+  "dependencies": ["httpx"],
+  "when_to_use": "When researching a topic, searching the web, fetching web content, or finding academic papers",
+  "examples": [{"input": "Search for latest AI news", "output": "Search results with links"}, {"input": "Fetch example.com", "output": "Page content extracted"}],
+  "priority": 30,
+  "cost": "low",
+  "version": "0.0.1",
+  "enabled": true
+}

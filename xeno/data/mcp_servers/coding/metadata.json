@@ -1,0 +1,14 @@
+{
+  "name": "coder",
+  "description": "Coding tools — shell execution, file operations, git management, code search, background tasks",
+  "tags": ["coding", "shell", "files", "git", "search", "background-tasks"],
+  "category": "coding",
+  "capabilities": ["shell-execution", "file-read-write", "git-operations", "code-search", "background-tasks", "directory-listing"],
+  "dependencies": [],
+  "when_to_use": "When needing to run shell commands, read/write files, manage git repos, search code, or run background tasks",
+  "examples": [{"input": "Run 'ls -la'", "output": "Directory listing"}, {"input": "Read file main.py", "output": "File contents"}],
+  "priority": 20,
+  "cost": "free",
+  "version": "0.0.1",
+  "enabled": true
+}

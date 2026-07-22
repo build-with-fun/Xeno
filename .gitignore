@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Runtime state (regenerated on each run)
+data/
+
+# Scraped/generated workspace files
+workspace/
+
+# Log files
+*.log
+
+# Secrets
+.env
+.env.example
+agents/gmail/*.json

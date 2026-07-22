@@ -1,0 +1,70 @@
+[project]
+name = "xeno-new"
+version = "2.0.0"
+description = "Xeno — Advanced AI Agent built on the real deepagents library"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.9",
+    "chromadb>=0.4",
+    "deepagents>=0.6.12",
+    "langchain>=0.3",
+    "langchain-core>=0.3",
+    "langchain-mcp-adapters>=0.3",
+    "langchain-anthropic>=0.3",
+    "langchain-deepseek>=1.0",
+    "langchain-google-genai>=2.0",
+    "langchain-groq>=1.0",
+    "langchain-openai>=0.2",
+    "langgraph>=0.4",
+    "mcp>=1.0",
+    "fastapi>=0.104",
+    "fastmcp>=0.2",
+    "httpx>=0.25",
+    "pydantic>=2.5",
+    "pydantic-settings>=2.1",
+    "pyyaml>=6.0",
+    "requests>=2.31",
+    "rich>=13.7",
+    "uvicorn>=0.24",
+    "watchdog>=3.0",
+    "tenacity>=8.2",
+    "Pillow>=10.0",
+    "fpdf2>=2.7",
+    "psutil>=5.9",
+    "ddgs>=9.0",
+    "playwright>=1.40",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "google-api-python-client>=2.198.0",
+    "google-auth-oauthlib>=1.4.0",
+    "google-auth-httplib2>=0.4.0",
+    "langchain-ollama>=1.1.0",
+    "duckduckgo-search>=8.1.1",
+    "pyside6>=6.7",
+    "pyside6-fluent-widgets[full]>=1.11.2",
+    "qtawesome>=1.3",
+    "darkdetect>=0.8",
+    "pywinstyles>=0.1",
+    "qrcode>=7.4",
+]
+
+[project.optional-dependencies]
+windows = [
+    "pyautogui>=0.9",
+    "pywin32>=305",
+    "pygetwindow>=0.0.9",
+    "win10toast>=0.9",
+    "pytesseract>=0.3",
+]
+voice = [
+    "faster-whisper>=1.0",
+    "pdf2image>=1.16",
+    "pdfplumber>=0.10",
+    "PyPDF2>=3.0",
+]
+vision = [
+    "pytesseract>=0.3",
+    "pdf2image>=1.16",
+    "pdfplumber>=0.10",
+]

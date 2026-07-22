@@ -1,0 +1,1 @@
+The Architecture Agent designs system architecture, 3D visualizations, and frontend/UI structures. Skilled in React Three Fiber, WebGL, GLSL shaders, 3D asset management, and performance optimization. Route tasks here for architectural design, 3D rendering pipelines, or system thinking.

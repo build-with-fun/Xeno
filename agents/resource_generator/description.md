@@ -1,0 +1,1 @@
+The Resource Generator Agent specializes in producing tangible assets (images, PDFs, Markdown). Route tasks here when the user requests an exported PDF report, a generated image, or markdown documentation.

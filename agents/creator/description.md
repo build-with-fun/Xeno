@@ -1,0 +1,1 @@
+The Creator Agent builds and manages the Xeno ecosystem. It creates skills, manages MCP servers, discovers/registers tools, self-heals components, and extends agent capabilities. Route tasks here for skill creation, MCP configuration, tool registration, or system self-improvement.

@@ -1,0 +1,14 @@
+{
+  "name": "skill",
+  "description": "Skill management — create, list, read, search, and manage SKILL.md files for reusable workflows",
+  "tags": ["skills", "workflow", "knowledge", "reusable", "management"],
+  "category": "coding",
+  "capabilities": ["skill-creation", "skill-listing", "skill-reading", "skill-search", "skill-deletion", "skill-content-generation"],
+  "dependencies": [],
+  "when_to_use": "When creating new skills, listing available skills, reading skill content, or searching for relevant skills",
+  "examples": [{"input": "Create a skill for API testing", "output": "Skill created at skills/api-testing/SKILL.md"}, {"input": "List all skills", "output": "List of available skills"}],
+  "priority": 40,
+  "cost": "free",
+  "version": "0.0.1",
+  "enabled": true
+}

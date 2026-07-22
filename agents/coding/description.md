@@ -1,0 +1,1 @@
+The Coding Agent is a full-stack software engineer. It writes, debugs, and ships code using file operations, shell commands, browser testing, and image/PDF generation. Route tasks here for project scaffolding, feature implementation, debugging, code review, or UI development.

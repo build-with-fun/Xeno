@@ -1,0 +1,14 @@
+{
+  "name": "desktop",
+  "description": "Desktop automation server — mouse, keyboard, clipboard, screen capture, window management, process control, file operations, Python execution",
+  "tags": ["desktop", "automation", "mouse", "keyboard", "screen", "windows", "pyautogui"],
+  "category": "automation",
+  "capabilities": ["screen-capture", "mouse-control", "keyboard-control", "clipboard", "window-management", "process-control", "file-ops", "python-execution"],
+  "dependencies": ["pyautogui", "PIL", "pyperclip", "psutil", "pywinauto"],
+  "when_to_use": "When native desktop automation (mouse clicks, keyboard typing, screen capture, window management) is needed",
+  "examples": [{"input": "Capture screen and click the search button", "output": "Screen captured, button clicked"}],
+  "priority": 50,
+  "cost": "low",
+  "version": "0.0.1",
+  "enabled": true
+}

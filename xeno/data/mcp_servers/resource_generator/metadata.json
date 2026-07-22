@@ -1,0 +1,14 @@
+{
+  "name": "resource-generator",
+  "description": "Resource generation — create images from text prompts, generate PDF reports",
+  "tags": ["images", "pdf", "generation", "resource", "content-creation"],
+  "category": "automation",
+  "capabilities": ["image-generation", "pdf-generation", "resource-creation"],
+  "dependencies": ["httpx"],
+  "when_to_use": "When needing to generate images from text descriptions or create PDF reports from markdown",
+  "examples": [{"input": "Generate an image of a sunset", "output": "Image saved to file"}, {"input": "Create a PDF report", "output": "PDF generated"}],
+  "priority": 55,
+  "cost": "medium",
+  "version": "0.0.1",
+  "enabled": true
+}

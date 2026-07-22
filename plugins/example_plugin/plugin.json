@@ -1,0 +1,9 @@
+{
+  "name": "example-plugin",
+  "version": "0.1.0",
+  "description": "Example plugin demonstrating the Xeno plugin API",
+  "author": "Xeno Team",
+  "hooks": ["before_tool", "after_tool"],
+  "tools": ["example_greeting"],
+  "mcp_servers": []
+}

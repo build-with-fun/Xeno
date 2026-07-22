@@ -1,0 +1,14 @@
+{
+  "name": "browser",
+  "description": "Full browser automation server with Playwright — navigate, click, type, screenshot, extract content, manage tabs, cookies, and storage. Proxies to browser_daemon HTTP backend.",
+  "tags": ["browser", "playwright", "web-automation", "scraping", "screenshots"],
+  "category": "automation",
+  "capabilities": ["web-navigation", "dom-interaction", "screenshot", "content-extraction", "tab-management", "cookie-management", "form-filling", "device-emulation"],
+  "dependencies": ["playwright", "playwright-stealth", "aiohttp"],
+  "when_to_use": "When you need to navigate websites, fill forms, take screenshots, extract content, or do any browser-based task",
+  "examples": [{"input": "Open google.com and search for AI news", "output": "Navigated to Google, search performed"}],
+  "priority": 60,
+  "cost": "low",
+  "version": "0.0.1",
+  "enabled": true
+}
