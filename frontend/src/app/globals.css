@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 10% 4%;
+    --secondary: 270 100% 50%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 270 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 350 100% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 20%;
+    --input: 240 5% 20%;
+    --ring: 180 100% 50%;
+    --radius: 0.75rem;
+    --chart-1: 180 100% 50%;
+    --chart-2: 270 100% 50%;
+    --chart-3: 150 100% 40%;
+    --chart-4: 350 100% 50%;
+    --chart-5: 30 100% 50%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted/50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+
+  /* Gradient text utility */
+  .gradient-text {
+    @apply bg-gradient-to-r from-xenoblue via-xenopurple to-xenogreen bg-clip-text text-transparent;
+  }
+
+  /* Glass morphism */
+  .glass {
+    @apply bg-card/80 backdrop-blur-xl border border-white/10;
+  }
+
+  /* Glow effects */
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(189, 0, 255, 0.3);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-xenoblue to-xenopurple rounded-lg font-semibold 
+           hover:opacity-90 transition-all duration-300 transform hover:scale-105 
+           shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-muted hover:bg-muted/80 rounded-lg font-semibold 
+           transition-all duration-300 border border-white/10;
+  }
+
+  .card-glass {
+    @apply glass rounded-2xl p-6 transition-all duration-300 
+           hover:border-xenoblue/50 hover:shadow-lg hover:shadow-xenoblue/10;
+  }
+
+  .input-glass {
+    @apply bg-muted/50 border border-white/10 rounded-lg px-4 py-3 
+           focus:outline-none focus:border-xenoblue/50 focus:ring-2 
+           focus:ring-xenoblue/20 transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s linear infinite;
+  }
+
+  .text-shadow {
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+  }
+}
